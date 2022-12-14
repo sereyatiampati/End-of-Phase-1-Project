@@ -9,7 +9,11 @@
 .app-wrapper{
 height: auto;
 width: 100%;
+margin: 0 auto;
 line-height: 1.6;
+padding: 32px;
+background: #fff;
+text-align: center;
 }
 .search-meal{
     text-align: center;
@@ -19,23 +23,45 @@ line-height: 1.6;
   border-bottom-left-radius: 100px;
   border-top-left-radius: 100px;
   border: 1px solid lightgrey;
-  padding:9px 150px 9px 9px;
+  padding:10px 150px 8px 10px;
 }
 #search-btn{
     border-bottom-right-radius: 100px;
     border-top-right-radius: 100px;
-    padding: 8.5px ;
+    padding: 8.5px 8px ;
     border: none;
     background-color: darkorange;
 }
+/* #search-input ::after{
+    border: none;
+} */
+.search-box{
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
 i{
     color: white;
-    font-size: 16px;
+    font-size: 17px;
 }
 ::placeholder{
-    color: rgba(255, 140, 0, 0.562);
+    color: rgba(255, 140, 0, 0.61);
 }
 .title{
     font-weight: 900;
     color: rgba(0, 0, 0, 0.795);
+    text-align: center;
 }
+blockquote{
+    color: rgba(0, 0, 0, 0.651);
+}
+/* img{
+    width: 200px;
+    height: 200px;
+} */
+.btn{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+
