@@ -1,8 +1,37 @@
-body{
+*{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    font-family: 'Lato', sans-serif;
 }
 .app-wrapper{
 height: auto;
 width: 100%;
+line-height: 1.6;
+}
+.search-meal{
+    text-align: center;
+    padding-top: 50px;
+}
+#search-input{
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 100px;
+  border: 1px solid lightgrey;
+  padding:9px 150px 9px 6px;
+}
+#search-btn{
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+    padding: 8.5px ;
+    border: none;
+    background-color: darkorange;
+}
+i{
+    color: white;
+    font-size: 16px;
+}
+::placeholder{
+    color: rgba(255, 140, 0, 0.562);
 }
