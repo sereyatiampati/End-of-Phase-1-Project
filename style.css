@@ -19,7 +19,7 @@ line-height: 1.6;
   border-bottom-left-radius: 100px;
   border-top-left-radius: 100px;
   border: 1px solid lightgrey;
-  padding:9px 150px 9px 6px;
+  padding:9px 150px 9px 9px;
 }
 #search-btn{
     border-bottom-right-radius: 100px;
@@ -34,4 +34,8 @@ i{
 }
 ::placeholder{
     color: rgba(255, 140, 0, 0.562);
+}
+.title{
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.795);
 }
