@@ -65,3 +65,15 @@ a{
     text-decoration: none;
 }
 
+/* styling the recipe card  */
+#close-button{
+    border-radius: 50%;
+    border: none;
+}
+#close-button i{
+    color: rgba(0, 0, 0, 0.89);
+}
+
+
+/* food item */
+
