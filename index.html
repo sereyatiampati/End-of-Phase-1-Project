@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <script defer src="src/script.js"></script>
     <title>Recipe App</title>
 </head>
@@ -13,7 +14,7 @@
     <main class = "container">
         <div class = "app-wrapper">
           <div class = "search-meal">
-            <h2 class = "title">Find Meals For Your Ingredient</h2>
+            <h2 class = "title">Enter your main Ingredient to find Meals Suggestions</h2>
             <blockquote>You can make great meals with any ingredients you have available.<br>
               <cite>- Nadia Santini</cite>
             </blockquote>
@@ -25,24 +26,47 @@
               </button>
             </div>
           </div>
-    
-          <div class = "meal-result">
-            <h2 class = "search-title">Your Search Results:</h2>
-            <div id= "meals-display">
-                <!-- Search results displayed here -->
-            </div>
+          <div>
+            <h2 class = "title" id="result-heading">Your Search Results:</h2>
           </div>
+
+          <div class = "food-result">
+            <!-- Search results displayed here-->
+                <div class="food-item">
+
+                    <img src="food.avif" alt="">
+
+                    <div class="food-details">
+
+                      <h3 class="food-name">Yummy Cheese Cake</h3>
+                      <h4 class = "ingeredient-category">Category Name</h4>
+                      <div class = "recipe-instructions">
+                        <h3>Instructions:</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis quis accusantium natus! Porro, reiciendis maiores molestiae distinctio veniam ratione ex provident ipsa, soluta suscipit quam eos velit autem iste!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam voluptatibus ad obcaecati magnam, esse numquam nisi ut adipisci in?</p>
+                      </div>
+
+                    </div>
+                </div>
+
+                <div class="food-item">
+
+                  <img src="food.avif" alt="">
+                  
+                  <div class="food-details">
+
+                    <h3 class="food-name">Yummy Cheese Cake</h3>
+                    <h4 class = "ingeredient-category">Category Name</h4>
+                    <div class = "recipe-instructions">
+                      <h3>Instructions:</h3>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis quis accusantium natus! Porro, reiciendis maiores molestiae distinctio veniam ratione ex provident ipsa, soluta suscipit quam eos velit autem iste!</p>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam voluptatibus ad obcaecati magnam, esse numquam nisi ut adipisci in?</p>
+                    </div>
+
+                  </div>
+              </div>
+              </div>
     
-          <div class = "meal-details">
-            <!-- recipe card close button -->
-            <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn">
-              <i class = "fas fa-times"></i>
-            </button>
-    
-            <div class = "meal-details-content">
-                <!-- meal recipe instructions displayed here-->
-            </div>
-          </div>
         </div>
     </main>
 </body>
