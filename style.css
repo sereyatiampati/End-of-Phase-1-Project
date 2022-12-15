@@ -15,7 +15,7 @@ html{
 .app-wrapper{
     margin: 0 auto;
     line-height: 1.6;
-    padding: 0;
+    padding: 0 32px;
     background: #fff;
     text-align: center;
     height: auto;
@@ -42,7 +42,6 @@ html{
     background-color: darkorange;
 }
 .search-box{
-
     margin-top: 15px;
     margin-bottom: 40px;
     width: 100%;
@@ -69,16 +68,15 @@ blockquote{
 }
 
 /* Styling the result section*/
-#result-heading{
-    margin-bottom: 25px;
-}
+
+
 .food-item{
-    width: 100%;
+    width: 33%;
     height: 450px;
     border-radius: 16px;   
     box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
-    padding: 0 15px 15px 15px;
-   overflow: hidden;
+    overflow: hidden;
+    margin: 32px 0;
 }
 .food-item img{
     border-radius: 4px;
@@ -87,28 +85,13 @@ blockquote{
     width: 80%;
     height: 220px;
     margin-top: 10px;
-    /* object-fit: cover; */
+    
 }
 h3.food-name{
-    /* padding: 5px 8px; */
+    padding: 3px;
     margin-top: 5px;
     text-align: center;
     font-size: 20px;
     display: block;
 }
-h4.ingredient-category{
-    text-align: center;
-    display: block;
-}
-.recipe-instructions h3{
-    text-align: center;
-    color: rgba(255, 140, 0, 0.884);
-    display: block;
-}
-.food-result{
-    width: 100%;
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
