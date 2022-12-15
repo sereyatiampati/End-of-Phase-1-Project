@@ -94,4 +94,11 @@ h3.food-name{
     font-size: 20px;
     display: block;
 }
+h4.ingredient-category{
+    text-align: center;
+    display: inline-block;
+    background:rgba(255, 140, 0, 0.733);
+    padding: 3px 6px;
+    color: #fff;
+}
 
