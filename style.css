@@ -3,17 +3,23 @@
     margin: 0;
     box-sizing: border-box;
 }
-.container{
+html{
     font-family: 'Lato', sans-serif;
+    font-size: 12px;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
 }
 .app-wrapper{
-height: auto;
-width: 100%;
-margin: 0 auto;
-line-height: 1.6;
-padding: 32px;
-background: #fff;
-text-align: center;
+    margin: 0 auto;
+    line-height: 1.6;
+    padding: 0;
+    background: #fff;
+    text-align: center;
+    height: auto;
+    width: 100%;
 }
 .search-meal{
     text-align: center;
@@ -23,8 +29,11 @@ text-align: center;
   border-bottom-left-radius: 100px;
   border-top-left-radius: 100px;
   border: 1px solid lightgrey;
-  padding:10px 150px 8px 10px;
+  padding:10px;
+  width: 30%;
+  outline-color: rgba(255, 140, 0, 0.534);
 }
+
 #search-btn{
     border-bottom-right-radius: 100px;
     border-top-right-radius: 100px;
@@ -32,10 +41,8 @@ text-align: center;
     border: none;
     background-color: darkorange;
 }
-/* #search-input ::after{
-    border: none;
-} */
 .search-box{
+
     margin-top: 15px;
     margin-bottom: 40px;
 }
@@ -49,6 +56,7 @@ text-align: center;
 }
 .title{
     font-weight: 900;
+    font-size: 20px;
     color: rgba(0, 0, 0, 0.795);
     text-align: center;
 }
@@ -57,20 +65,34 @@ blockquote{
 }
 
 /* Styling the result section*/
+#result-heading{
+    margin-bottom: 25px;
+}
 .food-item{
+    width: 100%;
     border-radius: 16px;   
     box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
-    /* margin: 32px 0;
-    overflow: hidden; */
+    padding: 0 15px 15px 15px;
+   /* overflow: hidden; */
 }
 .food-item img{
-    height: 100%;
+    border-radius: 4px;
+    height: 300px;
     width: 100%;
     object-fit: cover;
     /* display: block; */
 }
 h3.food-name{
-    padding: 10px 8px;
+    /* padding: 5px 8px; */
     font-size: 22px;
 }
-
+.food-result{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.recipe-instructions h3{
+    color: rgba(255, 140, 0, 0.884);
+}
