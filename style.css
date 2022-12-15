@@ -39,9 +39,10 @@ text-align: center;
     margin-top: 15px;
     margin-bottom: 40px;
 }
-i{
+#search-btn i{
     color: white;
     font-size: 17px;
+    cursor: pointer;
 }
 ::placeholder{
     color: rgba(255, 140, 0, 0.61);
@@ -54,26 +55,22 @@ i{
 blockquote{
     color: rgba(0, 0, 0, 0.651);
 }
-/* img{
-    width: 200px;
-    height: 200px;
-} */
-.btn{
-    cursor: pointer;
-}
-a{
-    text-decoration: none;
-}
 
-/* styling the recipe card  */
-#close-button{
-    border-radius: 50%;
-    border: none;
+/* Styling the result section*/
+.food-item{
+    border-radius: 16px;   
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+    /* margin: 32px 0;
+    overflow: hidden; */
 }
-#close-button i{
-    color: rgba(0, 0, 0, 0.89);
+.food-item img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* display: block; */
 }
-
-
-/* food item */
+h3.food-name{
+    padding: 10px 8px;
+    font-size: 22px;
+}
 
