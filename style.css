@@ -106,5 +106,16 @@ h4.ingredient-category{
     color: rgba(255, 140, 0, 0.884);
     display: block;
 }
-
-
+.food-result{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.noResult{
+    color: rgba(255, 0, 0, 0.795);
+    padding-left: 300px;
+    font-size: 28px;
+    font-weight: 700;
+    width: 100%;
+}
