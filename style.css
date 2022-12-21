@@ -21,6 +21,9 @@ html{
     height: auto;
     width: 100%;
 }
+
+/* styling the header */
+
 header {
     position: fixed;
     top: 0;
@@ -55,6 +58,9 @@ header {
     font-size: 1.3rem;
 
 }
+
+/* styling the search/form section */
+
 .search-meal{
     text-align: center;
     padding-top: 80px;
