@@ -29,8 +29,7 @@ header {
     top: 0;
     padding : 0 20px;
     margin-top: 0;
-    margin-right: 20px;
-    background-color: #fff;  
+    background-color: #fff; 
   }
   .logo{
     width: inherit;
@@ -48,7 +47,7 @@ header {
 #header {
     padding-top: 0px;
     width: 100%;
-    height: 85px;
+    height: 75px;
 }
 .logo p{
     color: darkorange;
@@ -111,12 +110,16 @@ blockquote{
 
 
 .food-item{
-    width: 33%;
+    width: 32%;
     height: 450px;
     border-radius: 16px;   
     box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
-    overflow: hidden;
-    margin: 32px 0;
+    overflow: scroll;
+    margin: 32px 5px;
+}
+.food-item:hover{
+    border-right: 4px solid rgba(255, 140, 0, 0.774);
+    border-bottom: 4px solid rgba(255, 140, 0, 0.774);
 }
 .food-item img{
     border-radius: 4px;
@@ -138,15 +141,31 @@ h3.food-name{
 h4.ingredient-category{
     text-align: center;
     display: inline-block;
-    background:rgba(255, 140, 0, 0.733);
     padding: 3px 6px;
-    color: #fff;
+    color: rgba(0, 0, 0, 0.548);
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-style: italic;
+}
+h4.food-origin{
+    text-align: center;
+    display: inline-block;
+    padding: 3px 6px;
+    color: rgba(0, 0, 0, 0.548);
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-style: italic;
 }
 .recipe-instructions h3{
     text-align: center;
     color: rgba(255, 140, 0, 0.884);
     display: block;
 }
+.recipe-instructions p{
+    text-align: left;
+    padding: 0 10px;
+}
+
 .food-result{
     width: 100%;
     margin-top: 50px;
@@ -154,9 +173,44 @@ h4.ingredient-category{
     flex-wrap: wrap;
 }
 .noResult{
-    color: rgba(255, 0, 0, 0.795);
+    color:  rgba(255, 140, 0, 0.884);
     padding-left: 300px;
     font-size: 28px;
     font-weight: 700;
     width: 100%;
+}
+footer{
+    margin-top: 30px;
+    padding: 10px;
+    border-top: 1px solid darkorange;
+    /* margin-right: 100px;
+    margin-left: 100px; */
+}
+footer > ul{
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+}
+.footer > li {
+    margin-right: 50px;
+    cursor: pointer;
+}
+.footer > li:hover {
+    color: darkorange; 
+}
+ul {
+    list-style: none;
+}
+footer > li{
+    margin-right: 30px;
+    font-family: 'Lato', sans-serif;
+
+}
+footer > span {
+    padding-right: 70px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    word-spacing: 3px;
 }
