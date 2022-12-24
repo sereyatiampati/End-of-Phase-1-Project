@@ -53,8 +53,11 @@ header {
     color: darkorange;
     margin: auto;
     margin-top: 25px;
-    margin-left: 120px;
+    text-align: center;
+    margin-left: 100px;
+    /* margin-left: 120px; */
     font-size: 1.3rem;
+
 
 }
 
