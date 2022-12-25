@@ -28,9 +28,29 @@ function showFoodResult(){
         <div class="food-item" data-id="${foodItem.idMeal}">
           <img src="${foodItem.strMealThumb}" alt="${foodItem.strMeal} Recipe">
           <div class="food-details">
-            <h4 class = "food-origin">${foodItem.strArea}</h4>
             <h3 class="food-name">${foodItem.strMeal}</h3>
-            <h4 class = "food-category">${foodItem.strCategory}</h4>
+            <h4 class = "food-origin">${foodItem.strArea}</h4>
+            <div class="ingredients">
+              <h3>Ingredients</h3>
+              <ul class= "ingredient-list">
+              <li>${foodItem.strMeasure1} ${foodItem.strIngredient1}</li>
+              <li>${foodItem.strMeasure2} ${foodItem.strIngredient2}</li>
+              <li>${foodItem.strMeasure3} ${foodItem.strIngredient3}</li>
+              <li>${foodItem.strMeasure4} ${foodItem.strIngredient4}</li>
+              <li>${foodItem.strMeasure5} ${foodItem.strIngredient5}</li>
+              <li>${foodItem.strMeasure6} ${foodItem.strIngredient6}</li>
+              <li>${foodItem.strMeasure7} ${foodItem.strIngredient7}</li>
+              <li>${foodItem.strMeasure8} ${foodItem.strIngredient8}</li>
+              <li>${foodItem.strMeasure9} ${foodItem.strIngredient9}</li>
+              <li>${foodItem.strMeasure10} ${foodItem.strIngredient10}</li>
+              <li>${foodItem.strMeasure11} ${foodItem.strIngredient11}</li>
+              <li>${foodItem.strMeasure12} ${foodItem.strIngredient12}</li>
+              <li>${foodItem.strMeasure13} ${foodItem.strIngredient13}</li>
+              <li>${foodItem.strMeasure14} ${foodItem.strMeasure14} ${foodItem.strIngredient14}</li>
+              <li>${foodItem.strMeasure15} ${foodItem.strIngredient15}</li>
+              <li>${foodItem.strMeasure16} ${foodItem.strIngredient16}</li>
+              </ul>
+            </div>
             <div class = "recipe-instructions">
               <h3>Instructions:</h3>
               <p>${foodItem.strInstructions}</p>
