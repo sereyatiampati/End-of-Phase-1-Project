@@ -54,10 +54,8 @@ header {
     margin: auto;
     margin-top: 25px;
     text-align: center;
-    margin-left: 300px;
-    /* margin-left: 120px; */
+    margin-left: 200px;
     font-size: 1.3rem;
-
 
 }
 
@@ -142,15 +140,6 @@ h3.food-name{
     display: block;
     font-weight: 600;
 }
-h4.food-category{
-    text-align: center;
-    display: inline-block;
-    padding: 3px 6px;
-    color: rgba(0, 0, 0, 0.829);
-    font-size: 1.2rem;
-    font-weight: 500;
-    font-style: italic;
-}
 h4.food-origin{
     text-align: center;
     display: inline-block;
@@ -162,6 +151,21 @@ h4.food-origin{
     background: rgba(0, 0, 0, 0.055);
     margin-top: 5px;
     border-radius: 5px;
+}
+.ingredients{
+    padding: 0 2px;
+}
+.ingredients h3{
+    color: rgba(255, 140, 0, 0.884);
+    text-decoration: underline;
+}
+.ingredient-list {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.ingredient-list li{
+    width: 50%;
 }
 .recipe-instructions{
     margin: 0 6px;
