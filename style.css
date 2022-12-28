@@ -126,13 +126,11 @@ blockquote{
 .food-item img{
     border-radius: 20px;
     display: block;
-    margin: auto;
+    margin: 25px auto 0 auto;
     width: 70%;
-    height: 250px;
-    margin-top: 25px;
-    
+    height: 250px;    
 }
-h3.food-name{
+h2.food-name{
     padding: 3px;
     margin-top: 5px;
     text-align: center;
@@ -155,7 +153,9 @@ h4.food-origin{
 .ingredients{
     padding: 0 2px;
 }
-.ingredients h3{
+.food-details h3{
+    font-weight: 400;
+    font-size: 16px;
     color: rgba(255, 140, 0, 0.884);
     text-decoration: underline;
 }
@@ -168,7 +168,7 @@ h4.food-origin{
     width: 50%;
 }
 .recipe-instructions{
-    margin: 0 6px;
+    margin: 10px 6px 0 6px;
     padding: 0 15px;
     background: rgba(0, 0, 0, 0.055);
     border-radius: 20px;
@@ -181,8 +181,11 @@ h4.food-origin{
     display: block;
     text-decoration: underline;
 }
-.recipe-instructions p{
+.recipe-instructions pre{
+    white-space: pre-wrap;
+    word-wrap: break-word;
     text-align: left;
+    font-family: inherit;
 }
 
 .food-result{
