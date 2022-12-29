@@ -21,7 +21,7 @@ Setup and install the project locally by running the steps below:
 
 ### Installations
 
-1. Clone the repo to your local mahine
+1. Clone the repo to your local machine
    ```sh
    git clone https://github.com/sereyatiampati/End-of-Phase-1-Project.git
    ```
