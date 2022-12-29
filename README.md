@@ -12,8 +12,8 @@ Below is a list of all the technologies used to bootstrap this project.
 <li> HTML5</li>
 <li> CSS3</li>
 <li> Vanilla JavaScript</li>
-<li> [The Meal DB API](https://www.themealdb.com)</li>
-<li> bootstrap</li>
+<li> The Meal DB API - (https://www.themealdb.com)</li>
+<li> Bootstrap</li>
 </ul>
 
 <h2> Get Started</h2>
@@ -48,10 +48,10 @@ json-server --watch db.json
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Author
-* **Sereya Tiampati** - [sereyatiampati](https://github.com/sereyatiampati)
+* **Github Profile** - [sereyatiampati](https://github.com/sereyatiampati)
 
 ## Contact
-Project Link: [https://github.com/sereyatiampati/End-of-Phase-1-Project.git](https://github.com/sereyatiampati/End-of-Phase-1-Project.git)
+Github Project Link: [End of Phase 1 Finished Project](https://github.com/sereyatiampati/End-of-Phase-1-Project.git)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
