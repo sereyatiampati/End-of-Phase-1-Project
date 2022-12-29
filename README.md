@@ -1,7 +1,7 @@
 # Recipe App
 <h2> About The Project</h2>
 <p>This is a web application that allows a user to search for a food recipe. Popular Searches include Soup, Salad, Tacos, Fish, Beef, Salmon Sausage, Pork, Curry, Egg, Chicken, Cake, Cheese, Chocolate, Lamb, Cabbage, Peas, Lentils and so much more.</p>
-<p>[Link to Live Site](https://sereyatiampati.github.io/End-of-Phase-1-Project)</p>
+<p> * [Link to Live Site](https://sereyatiampati.github.io/End-of-Phase-1-Project)</p>
 
 <h2>Demo</h2>
 <p><img src="images/demo.png" alt="Recipe app demo image" style=""></p>
@@ -12,7 +12,7 @@ Below is a list of all the technologies used to bootstrap this project.
 <li> HTML5</li>
 <li> CSS3</li>
 <li> Vanilla JavaScript</li>
-<li>[The Meal DB API](https://www.themealdb.com)</li>
+<li> * [The Meal DB API](https://www.themealdb.com)</li>
 <li> bootstrap</li>
 </ul>
 
