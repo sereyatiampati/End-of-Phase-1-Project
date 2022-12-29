@@ -27,15 +27,14 @@ Setup and install the project locally by running the steps below:
    ```
 
 2. Instal JSON Server globally on your machine by running this command on your terminal:
-
-<code>  npm install -g json-server</code>
+   ```sh
+      npm install -g json-server
+      ```
 
 3 .Run this command on your terminal to get the JSON server running:
-
-```sh
-json-server --watch db.json
-```
-
+   ```sh
+   json-server --watch db.json
+   ```
 
 4 . Then, open the `index.html` file on your browser to run the application.
 
