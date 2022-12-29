@@ -32,17 +32,17 @@ header {
     background-color: #fff; 
   }
   .logo{
-    width: inherit;
+    width: 100%;
     height: inherit;
     display: flex;
+    justify-content: center;
+    
   }
   .logo > img {
-    max-width: 100%;
     height: 100%;
     max-width: 100px;
     display: flex;
     justify-content: center;
-    margin-left: 20px;
 }
 #header {
     padding-top: 0px;
@@ -51,9 +51,9 @@ header {
 }
 .logo p{
     color: darkorange;
-    margin: 40px auto auto 170px;
-    text-align: center;
-
+    margin: 45px auto 0px auto;
+    padding-right: 120px;
+    font-size: 1.2rem;
 }
 
 /* styling the search/form section */
