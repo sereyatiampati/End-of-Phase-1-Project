@@ -2,72 +2,92 @@ window.addEventListener('DOMContentLoaded', () => {
     console.log('DOM fully loaded and parsed');
     showFoodResult()
   });
-
+//Initial References
 const resultsDiv = document.querySelector('.food-result')
 const searchButton = document.getElementById('search-btn')
 
-//event listeners
+//Event listeners
 searchButton.addEventListener("click", (e)=> {
   e.preventDefault();
   showFoodResult()
 })
 
-//show results that match the (search-query) input from user
+//Show results that match the (search-query) input from user
 function showFoodResult(){
   let searchQuery = document.getElementById('search-input').value.trim();
   fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchQuery}`)
   .then(response => response.json())
   .then(results => {
-    console.log(results)
-    let template="";
+    let template = "";
     if (results.meals){
-      console.log(results.meals)
-      results.meals.forEach(foodItem=> {
+      results.meals.forEach( foodItem => {
+        let list = showIngredientList(foodItem)
+        console.log(list)
         //food items to be appended to the result section if the search query match any meals 
-        template+=`
+        template += `
         <div class="food-item" data-id="${foodItem.idMeal}">
           <img src="${foodItem.strMealThumb}" alt="${foodItem.strMeal} Recipe">
           <div class="food-details">
-            <h3 class="food-name">${foodItem.strMeal}</h3>
+            <h2 class="food-name">${foodItem.strMeal}</h2>
             <h4 class = "food-origin">${foodItem.strArea}</h4>
+            <h3>Ingredients</h3>
             <div class="ingredients">
-              <h3>Ingredients</h3>
-              <ul class= "ingredient-list">
-              <li>${foodItem.strMeasure1} ${foodItem.strIngredient1}</li>
-              <li>${foodItem.strMeasure2} ${foodItem.strIngredient2}</li>
-              <li>${foodItem.strMeasure3} ${foodItem.strIngredient3}</li>
-              <li>${foodItem.strMeasure4} ${foodItem.strIngredient4}</li>
-              <li>${foodItem.strMeasure5} ${foodItem.strIngredient5}</li>
-              <li>${foodItem.strMeasure6} ${foodItem.strIngredient6}</li>
-              <li>${foodItem.strMeasure7} ${foodItem.strIngredient7}</li>
-              <li>${foodItem.strMeasure8} ${foodItem.strIngredient8}</li>
-              <li>${foodItem.strMeasure9} ${foodItem.strIngredient9}</li>
-              <li>${foodItem.strMeasure10} ${foodItem.strIngredient10}</li>
-              <li>${foodItem.strMeasure11} ${foodItem.strIngredient11}</li>
-              <li>${foodItem.strMeasure12} ${foodItem.strIngredient12}</li>
-              <li>${foodItem.strMeasure13} ${foodItem.strIngredient13}</li>
-              <li>${foodItem.strMeasure14} ${foodItem.strMeasure14} ${foodItem.strIngredient14}</li>
-              <li>${foodItem.strMeasure15} ${foodItem.strIngredient15}</li>
-              <li>${foodItem.strMeasure16} ${foodItem.strIngredient16}</li>
-              </ul>
+            <ul class= "ingredient-list">
+            <li>${foodItem.strMeasure1} ${foodItem.strIngredient1}</li>
+            <li>${foodItem.strMeasure2} ${foodItem.strIngredient2}</li>
+            <li>${foodItem.strMeasure3} ${foodItem.strIngredient3}</li>
+            <li>${foodItem.strMeasure4} ${foodItem.strIngredient4}</li>
+            <li>${foodItem.strMeasure5} ${foodItem.strIngredient5}</li>
+            <li>${foodItem.strMeasure6} ${foodItem.strIngredient6}</li>
+            <li>${foodItem.strMeasure7} ${foodItem.strIngredient7}</li>
+            <li>${foodItem.strMeasure8} ${foodItem.strIngredient8}</li>
+            <li>${foodItem.strMeasure9} ${foodItem.strIngredient9}</li>
+            <li>${foodItem.strMeasure10} ${foodItem.strIngredient10}</li>
+            <li>${foodItem.strMeasure11} ${foodItem.strIngredient11}</li>
+            <li>${foodItem.strMeasure12} ${foodItem.strIngredient12}</li>
+            </ul>
             </div>
             <div class = "recipe-instructions">
               <h3>Instructions:</h3>
-              <p>${foodItem.strInstructions}</p>
+              <pre>${foodItem.strInstructions}</pre>
             </div>
           </div>
         </div>
         `;
+
       });
-
        resultsDiv.classList.remove('noResult')
-
     } 
      else {
       template = "Sorry, No Results, try another ingredient!"
       resultsDiv.classList.add('noResult')
 
     }
-    resultsDiv.innerHTML=template;
+    resultsDiv.innerHTML = template;
+    console.log(list) 
   })
+}
+
+//Display ingredient list
+function showIngredientList(foodItem){
+  let count=1;
+    let ingredients=[];
+    for (let i in foodItem){
+      let ingredient="";
+      let measure="";
+      if (i.startsWith("strIngredient") && foodItem[i]){
+        ingredient=foodItem[i];
+        measure= foodItem[`strMeasure`+ count];
+        count += 1;
+        ingredients.push(`${measure} ${ingredient}`); 
+      }
+    }       
+        let ingredientList= document.createElement("ul")
+        ingredientList.className="ingredient-list"
+        ingredients.forEach((i) => {
+          let eachingredient= document.createElement("li");
+          eachingredient.innerText=i;
+          ingredientList.appendChild(eachingredient);
+        })
+       return ingredientList
 }
