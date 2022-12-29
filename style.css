@@ -15,7 +15,7 @@ html{
 .app-wrapper{
     margin: 0 auto;
     line-height: 1.6;
-    padding: 0 32px;
+    padding: 0 30px;
     background: #fff;
     text-align: center;
     height: auto;
@@ -189,6 +189,7 @@ h4.food-origin{
     width: 100%;
     margin-top: 35px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .noResult{
@@ -237,9 +238,13 @@ footer > span {
     .container{
         font-size: 12px;
     }
+    .app-wrapper{
+        padding: 0 30px;
+    }
     .food-item{
         width: 90%;
         height: 80%;
+        margin: 20px 5px;
     }
     .logo > img{
         margin-left: 0px;
@@ -248,20 +253,31 @@ footer > span {
         overflow: hidden;
         border: 2px solid rgba(255, 140, 0, 0.507);
     }
+    .logo p{
+        display: none;
+    }
 }
-@media screen and (min-width: 701px) and (max-width: 1023){ 
+@media screen and (min-width: 701px) and (max-width: 1023px){ 
     body {
         font-size:1.2rem;
     }
+    .app-wrapper{
+        padding: 0;
+    }
     .food-item{
-        width: 90%;
-        height: 80%
+        width: 45%;
+        height: 500px;
+        margin: 20px 10px;
     }
     .food-item:hover{
         border: 2px solid rgba(255, 140, 0, 0.507);
     }
+    .logo p{
+        font-size: 1rem;
+        margin: auto;
+    }
 
 }
-@media screen and (min-width:1024px) { 
+@media screen and (min-width: 1024px) { 
     body {font-size:1.1rem;}
  }
