@@ -51,8 +51,9 @@ header {
 }
 .logo p{
     color: darkorange;
-    margin: auto;
+    margin: 40px auto auto 170px;
     text-align: center;
+
 }
 
 /* styling the search/form section */
