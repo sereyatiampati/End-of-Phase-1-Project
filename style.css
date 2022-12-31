@@ -9,7 +9,7 @@ html{
 }
 .container{
     min-height: 100vh;
-    width: 100%;
+    max-width: 100%;
 }
 .app-wrapper{
     margin: 0 auto;
@@ -50,7 +50,7 @@ header {
 .logo p{
     color: darkorange;
     margin: 50px auto 0px;
-    padding-right: 220px;
+    padding-right: 180px;
     font-size: 1.2rem;
 }
 
