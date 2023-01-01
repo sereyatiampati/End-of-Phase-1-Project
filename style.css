@@ -198,8 +198,28 @@ h4.food-origin{
     font-weight: 700;
     width: 100%;
 }
+/* styling the comment / Feedback section */
+.feedback{
+    margin-top: 15px;
+}
+.feedback ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0;
+}
+.feedback ul li{
+    padding-right: 7px;
+}
+.feedback h4{
+    text-align: center;
+    color: white;
+    padding: 25px 0 10px;
+    font-size: 2.0rem;
+}
 /* styling the footer section */
 footer{
+    margin-top: 25px;
     font-size: 1.1rem;
     border-top: 1px solid darkorange;
 }
