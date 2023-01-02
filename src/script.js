@@ -1,18 +1,20 @@
+//DOMContentloaded event listener
 window.addEventListener('DOMContentLoaded', () => {
     console.log('DOM fully loaded and parsed');
-    showFoodResult()
+    //showFoodResult()
   });
+
 //Initial References
 const resultsDiv = document.querySelector('.food-result')
 const searchButton = document.getElementById('search-btn')
-
-//Event listeners
+const submitComment = document.querySelector('#submit-btn')
+const textArea = document.querySelector('#textAreaExample')
+//Event listener
 searchButton.addEventListener("click", (e)=> {
   e.preventDefault();
   showFoodResult()
 })
-
-//Show results that match the (search-query) input from user
+//Event handlers
 function showFoodResult(){
   let searchQuery = document.getElementById('search-input').value.trim();
   fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchQuery}`)
@@ -63,8 +65,7 @@ function showFoodResult(){
       resultsDiv.classList.add('noResult')
 
     }
-    resultsDiv.innerHTML = template;
-    console.log(list) 
+    resultsDiv.innerHTML = template; 
   })
 }
 
@@ -91,3 +92,28 @@ function showIngredientList(foodItem){
         })
        return ingredientList
 }
+
+//Comment submission Event listener
+submitComment.addEventListener('click', handleCommentSubmission)
+
+//Event handler
+function handleCommentSubmission(e) {
+  e.preventDefault()
+  let commentObj= {
+    comment:textArea.value
+  }
+  commentSubmission(commentObj)
+}
+
+//Comment submission
+function commentSubmission() {
+  fetch('http://localhost:3000/comments', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(commentObj)
+  })
+  .then(res => res.json())
+  .then(comment => console.log(comment))
+ }
