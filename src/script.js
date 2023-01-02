@@ -1,7 +1,7 @@
 //DOMContentloaded event listener
 window.addEventListener('DOMContentLoaded', () => {
     console.log('DOM fully loaded and parsed');
-    //showFoodResult()
+    showFoodResult()
   });
 
 //Initial References
@@ -10,6 +10,8 @@ const searchButton = document.getElementById('search-btn')
 const commentForm = document.querySelector('#comment-form')
 const submitComment = document.querySelector('#submit-btn')
 const textArea = document.querySelector('#textAreaExample')
+const stars = document.querySelectorAll(".far.fa-star.fa-sm.text-danger")
+
 //Event listener
 searchButton.addEventListener("click", (e)=> {
   e.preventDefault();
@@ -125,5 +127,7 @@ function commentSubmission(commentObj) {
     body: JSON.stringify(commentObj)
   })
   .then(res => res.json())
-  .then(comment => console.log(comment))
+  .then(data => console.log(data.comment))
  }
+
+
