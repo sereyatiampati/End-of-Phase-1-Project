@@ -1,14 +1,13 @@
 //DOMContentloaded event listener
 window.addEventListener('DOMContentLoaded', () => {
     console.log('DOM fully loaded and parsed');
-    //showFoodResult()
+    showFoodResult()
   });
 
 //Initial References
 const resultsDiv = document.querySelector('.food-result')
 const searchButton = document.getElementById('search-btn')
 const commentForm = document.querySelector('#comment-form')
-console.log(commentForm)
 const submitComment = document.querySelector('#submit-btn')
 const textArea = document.querySelector('#textAreaExample')
 //Event listener
@@ -100,11 +99,12 @@ commentForm.addEventListener('submit', handleCommentSubmission)
 
 //Event handler
 function handleCommentSubmission(e) {
-  e.preventDefault()
   let commentObj= {
     comment:textArea.value
   }
-  commentSubmission(commentObj)
+  commentSubmission(commentObj);
+  e.preventDefault();
+
 }
 
 //Comment submission
