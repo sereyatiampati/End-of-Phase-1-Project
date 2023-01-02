@@ -106,7 +106,7 @@ function handleCommentSubmission(e) {
 }
 
 //Comment submission
-function commentSubmission() {
+function commentSubmission(commentObj) {
   fetch('http://localhost:3000/comments', {
     method: 'POST',
     headers: {
