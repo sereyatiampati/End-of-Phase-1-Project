@@ -40,7 +40,7 @@ Setup and install the project locally by running the steps below:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Get started with searching for a Recipe for your Favourite Meal and enjoy making it for your Family and Friends!
+<h3>> Get started with searching for a Recipe for your Favourite Meal and enjoy making it for your Family and Friends! Don't forget to leave a comment and give us your feedback about your experience</h3>
 
 ## License
 
