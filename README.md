@@ -33,8 +33,8 @@ Setup and install the project locally by running the steps below:
 
 3 .Run this command on your terminal to get the JSON server running:
    ```sh
-   json-server --watch db.json
-   ```
+      json-server --watch db.json
+      ````
 
 4 . Then, open the `index.html` file on your browser to run the application.
 
