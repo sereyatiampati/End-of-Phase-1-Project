@@ -1,7 +1,7 @@
 //DOMContentloaded event listener
 window.addEventListener('DOMContentLoaded', () => {
     console.log('DOM fully loaded and parsed');
-    showFoodResult()
+    //showFoodResult()
   });
 
 //Initial References
@@ -99,12 +99,20 @@ commentForm.addEventListener('submit', handleCommentSubmission)
 
 //Event handler
 function handleCommentSubmission(e) {
+  e.preventDefault();
+  if (textArea.value.trim().length > 0) 
+  {
   let commentObj= {
-    comment:textArea.value
+    comment:textArea.value.trim()
   }
   commentSubmission(commentObj);
-  e.preventDefault();
-
+  textArea.value="";
+  alert("Thank you for your feedback")
+  }
+else{
+  alert("Please add a comment")
+}
+textArea.value="";
 }
 
 //Comment submission
