@@ -217,6 +217,9 @@ h4.food-origin{
     padding: 25px 0 10px;
     font-size: 2.0rem;
 }
+#cancel-btn{
+    visibility: hidden;
+}
 /* styling the footer section */
 footer{
     margin-top: 25px;
